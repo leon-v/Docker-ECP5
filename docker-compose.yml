@@ -1,0 +1,13 @@
+version: '3.8'
+services:
+    ecp5:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        container_name: ecp5
+        stdin_open: true
+        tty: true
+        cpu_shares: 8192
+        mem_limit: 8192M
+        volumes:
+            - ./projects:/usr/src/projects
