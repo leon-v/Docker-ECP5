@@ -1,10 +1,8 @@
 version: '3.8'
 services:
     ecp5:
-        build:
-            context: .
-            dockerfile: Dockerfile
         container_name: ecp5
+        image: gcr.io/hdl-containers/impl/ecp5:latest
         stdin_open: true
         tty: true
         cpu_shares: 8192
